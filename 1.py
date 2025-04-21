@@ -15,6 +15,9 @@ def Mult(s: str, n: int) -> str:
     return s * n
 def Reverse(s: str) -> str:
     return s[::-1]
+def CountVowels(s: str) -> int:
+    vowels = "аеёиоуыэюяАЕЁИОУЫЭЮЯ"
+    return sum(1 for char in s if char in vowels)
 
 result = Add("Hello, ", "world!")
 print(result) 
@@ -23,3 +26,6 @@ print(Mult("!", 5))
 print(Mult("mashatanya", 10))
 print(Mult("test", 0)) 
 print(Reverse("hello"))
+result = Add("Hello, ", "world!")
+print(result) 
+print(CountVowels("программирование"))

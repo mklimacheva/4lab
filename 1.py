@@ -17,6 +17,7 @@ def Mult(s: str, n: int) -> str:
 
 print(Mult("abc", 3))  
 print(Mult("!", 5))
+print(Mult("mashatanya", 10))
 print(Mult("test", 0)) 
 
 result = Add("Hello, ", "world!")

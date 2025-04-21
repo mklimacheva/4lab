@@ -19,6 +19,18 @@ def CountVowels(s: str) -> int:
     vowels = "аеёиоуыэюяАЕЁИОУЫЭЮЯ"
     return sum(1 for char in s if char in vowels)
 
+def fun(s):
+    if not s:
+        return False
+    
+    n = len(s)
+    for i in range(1, n // 2 + 1):
+        if n % i == 0:
+            substring = s[:i]
+            if substring * (n // i) == s:
+                return True
+    return False
+
 result = Add("Hello, ", "world!")
 print(result) 
 print(Mult("abc", 3))  
@@ -29,3 +41,6 @@ print(Reverse("hello"))
 result = Add("Hello, ", "world!")
 print(result) 
 print(CountVowels("программирование"))
+print(fun("ababab"))  
+print(fun("abcabc")) 
+print(fun("abcd"))   

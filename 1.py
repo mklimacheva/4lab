@@ -10,5 +10,9 @@ Original file is located at
 def Add(a: str, b: str) -> str:
     return a + b
 
+def Reverse(s: str) -> str:
+    return s[::-1]
+
+print(Reverse("hello"))
 result = Add("Hello, ", "world!")
-print(result)
+print(result) 

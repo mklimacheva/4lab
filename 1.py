@@ -10,5 +10,15 @@ Original file is located at
 def Add(a: str, b: str) -> str:
     return a + b
 
+def Mult(s: str, n: int) -> str:
+    if not isinstance(n, int) or n < 0:
+        raise ValueError("n должно быть целым неотрицательным числом")
+    return s * n
+
+print(Mult("abc", 3))  
+print(Mult("!", 5))
+print(Mult("mashatanya", 10))
+print(Mult("test", 0)) 
+
 result = Add("Hello, ", "world!")
-print(result)
+print(result) 
